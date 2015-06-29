@@ -1,0 +1,6 @@
+*.csproj
+*.sln
+build
+Library
+Temp
+publishToEC2.sh

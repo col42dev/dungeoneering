@@ -4,8 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.IO;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Serialization;
+//using Newtonsoft.Json;
+//using Newtonsoft.Json.Serialization;
 using Delaunay;
 using Assets.Map;
 using System.Reflection;
@@ -126,6 +126,7 @@ public class MapGen : MonoBehaviour {
 
 	public void OnSelect_Save(  )
 	{
+		/*
 		Debug.Log ("OnSelect_Save");
 
 		SaveGameTriggers ();
@@ -234,12 +235,14 @@ public class MapGen : MonoBehaviour {
 		Object.Destroy (combinedGameObjectList [2]);
 
 		RescanNavGraph();
+		*/
 	}
 
 
 
 	public void OnSelect_Load(  )
 	{
+		/*
 		Debug.Log ("OnSelect_Load"+ Time.realtimeSinceStartup);
 
 		LoadGameTriggers (); // 
@@ -335,6 +338,7 @@ public class MapGen : MonoBehaviour {
 		Debug.Log ("OnSelect_Load done: "+ + Time.realtimeSinceStartup);
 
 		RescanNavGraph();
+		*/
 	}
 
 	public void placeTrigger( Vector3 triggerPoint, int triggerTypeIndex )
@@ -370,7 +374,7 @@ public class MapGen : MonoBehaviour {
 
 	public void SaveGameTriggers()
 	{
-		
+		/*
 		string json = JsonConvert.SerializeObject( gameTriggers.ToArray(), Formatting.Indented, new JsonSerializerSettings { 
 			ReferenceLoopHandling = ReferenceLoopHandling.Ignore
 		});
@@ -379,11 +383,12 @@ public class MapGen : MonoBehaviour {
 		var sr = File.CreateText("Exports/MapGen.triggers.json");
 		sr.WriteLine (json);
 		sr.Close();
+		*/
 	}
 
 	public void LoadGameTriggers()
 	{
-
+		/*
 		//gameTriggers = new List<GameTrigger>();
 		gameTriggers.Clear ();
 
@@ -398,6 +403,7 @@ public class MapGen : MonoBehaviour {
 
 			placeTrigger( gameTriggersArray[i].point, gameTriggersArray[i].type);
 		}
+		*/
 	}
 	
 	private void MakeNewMap(string type)
