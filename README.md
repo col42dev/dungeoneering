@@ -8,6 +8,8 @@ Runs from a desktop web browser which has the Unity plugin installed.
 
 An [A* navigation](http://arongranberg.com/astar/) simulation is running, a debug navigation agent (yellow sphere) will continually try to target the screen pointer world location. It is unable to traverse layers without using the ramp placements.
 
+The view toggle switch between a 45 degree camera and plan view.
+
 # screen shots
 
 ![Screen 1](https://raw.githubusercontent.com/col42dev/dungeoneering/master/Docs/Screen%20Shot%202015-08-24%20at%2015.10.20.png)
